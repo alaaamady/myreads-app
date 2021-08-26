@@ -6,7 +6,7 @@ class BookShelfChanger extends Component{
       value: this.props.shelf,
     };
   
-  handleChane = event => {
+  handleChange = event => {
     this.setState({value: event.target.value});
     this.props.onMove(this.props.book, event.target.value);
   }
